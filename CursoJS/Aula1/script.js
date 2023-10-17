@@ -1,1 +1,0 @@
-console.log('Vinicius Soares'); /* Meu primeiro código */
