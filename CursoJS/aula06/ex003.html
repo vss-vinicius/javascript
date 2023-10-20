@@ -24,10 +24,23 @@
     
     <!-- JavaScript -->
     <script>
+        /*
+            var s = 'JavaScript'
+            'Eu estou aprendendo s' | não faz interpolação
+            'Eu estou aprendendo' + s | usa concatenação
+            `Eu estou aprendendo` ${s} | usa template string
+        */
+
+        /*
+            s.length | quantos caracteres a string tem
+            s.toUpperCase() | tudo para 'MAIÚSCULAS'
+            s.toLowerCase() | tudo para 'minúsculas'
+        */
         var n1 = Number(window.prompt('Digite um número: ')) // String
         var n2 = Number(window.prompt('Digite outro número ')) // String
         var s = n1 + n2
-        window.alert('A soma dos valores é ' + String(s)) // Concatenação
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) 
+        // '+' Concatenação
         // (number + number) para adição
         // (string + string) para concatenação
         // (Number.parseInt(n)) para número inteiro
