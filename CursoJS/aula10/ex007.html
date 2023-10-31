@@ -6,7 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Somando Números</title>
-    <style> /* CSS */
+    <style>
+        /* CSS */
         body {
             font: normal 18pt Arial;
         }
@@ -38,16 +39,27 @@
     <div id="res">Resultado</div>
 
     <script> // JavaScript
+        // Esta função é chamada quando o botão é clicado
         function somar() {
+            // Obtém o elemento de entrada com o id 'txtn1' e armazena-o em 'tn1'
             var tn1 = window.document.getElementById('txtn1')
+
+            // Obtém o elemento de entrada com o id 'txtn2' usando uma seleção de atributo e armazena-o em 'tn2'
             var tn2 = window.document.querySelector('input#txtn2')
+
+            // Obtém o elemento de resultado com o id 'res' e armazena-o em 'res'
             var res = window.document.getElementById('res')
 
+            // Converte o valor do primeiro campo de entrada (tn1) em um número e armazena-o em 'n1'
             var n1 = Number(tn1.value)
+
+            // Converte o valor do segundo campo de entrada (tn2) em um número e armazena-o em 'n2'
             var n2 = Number(tn2.value)
 
+            // Realiza a operação de soma entre os números 'n1' e 'n2' e armazena o resultado em 's'
             var s = n1 + n2
 
+            // Atualiza o conteúdo do elemento de resultado (res) com uma mensagem que exibe a soma
             res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`
         }
     </script>
