@@ -12,3 +12,5 @@ if (país == 'Brasil') {
     // Se a condição for falsa, exibe uma mensagem indicando que a pessoa é estrangeira.
     console.log('Você é Estrangeiro');
 }
+
+/* Neste código, uma variável chamada 'país' é definida com o valor 'Brasil'. Em seguida, a mensagem "Vivendo em Brasil" é exibida no console. Após isso, uma estrutura condicional 'if' verifica se o valor da variável 'país' é igual a 'Brasil' e, com base nessa condição, exibe uma mensagem apropriada no console, indicando se a pessoa é brasileira ou estrangeira. */
