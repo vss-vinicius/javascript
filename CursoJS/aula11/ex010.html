@@ -1,40 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt-BR"> <!-- HTML -->
+<html lang="pt-BR"> <!-- Declaração do tipo de documento HTML e definição do idioma como português do Brasil -->
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> 
+    <!-- Meta tag para definir o conjunto de caracteres como UTF-8 (Unicode) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DETRAN</title>
+    <!-- Meta tag para configuração da viewport para dispositivos móveis -->
+    <title>DETRAN</title> 
+    <!-- Título da página exibido na aba do navegador -->
 </head>
 
 <body>
-    <h1>Sistema de Multas</h1>
+    <h1>Sistema de Multas</h1> <!-- Título principal da página, exibido como um cabeçalho de nível 1 (h1) -->
 
     Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h
+    <!-- Uma mensagem e um campo de entrada de número para inserir a velocidade do carro, com um identificador (id) "txtvel" -->
 
     <input type="button" value="Verificar" onclick="calcular()">
+    <!-- Um botão com o rótulo "Verificar" que chama a função "calcular()" quando clicado -->
 
     <div id="res">
+    <!-- Uma div com o identificador "res" que será usada para exibir os resultados da verificação de velocidade -->
 
     </div>
 
-    <script> // JS
+    <script> // Início da seção de script JavaScript
         function calcular() {
-            var txtv = document.getElementById('txtvel')
+            var txtv = document.getElementById('txtvel') // Obtém o elemento de entrada de texto com o id "txtvel" -->
 
-            var res = document.querySelector('div#res')
+            var res = document.querySelector('div#res') // Obtém a div com o id "res" usando querySelector
 
-            var vel = Number(txtv.value)
+            var vel = Number(txtv.value) // Obtém o valor digitado no campo de entrada e converte para um número
 
             res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}Km/h</strong><p>`
+            // Define o conteúdo HTML da div "res" com uma mensagem que inclui a velocidade digitada
 
             if (vel > 60) {
                 res.innerHTML += `<p>Você está <strong>MULTADO</strong> por excesso de velocidade</p>`
+                // Se a velocidade for maior que 60 Km/h, adiciona uma mensagem de multa na div "res"
             }
 
             res.innerHTML += `<p>Dirija sempre com cinto de segurança!</p>`
+            // Sempre adiciona uma mensagem sobre dirigir com cinto de segurança na div "res"
         }
-    </script>
+    </script> <!-- Fim da seção de script JavaScript -->
 </body>
 
 </html>
