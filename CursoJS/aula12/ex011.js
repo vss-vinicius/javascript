@@ -1,5 +1,5 @@
 // Definindo a variável "idade" com o valor 64.
-var idade = 64;
+var idade = 25;
 
 // Exibindo a idade no console.
 console.log(`Você tem ${idade} anos.`);
