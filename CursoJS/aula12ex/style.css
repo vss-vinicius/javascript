@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body {
+    /*Box model stuff*/
+    background: rgb(70, 142, 236);
+    /*Typography stuff*/
+    font: normal 15pt Arial;
+}
+
+header {
+    /*Typography stuff*/
+    text-align: center;
+    color: white;
+}
+
+section {
+    /*Box model stuff*/
+    width: 500px;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    background: white;
+    /*Miscellaneous*/
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+
+footer {
+    /*Typography stuff*/
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
