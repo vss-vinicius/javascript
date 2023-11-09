@@ -24,6 +24,13 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
 }
 
+div {
+    /*Box model stuff*/
+    padding: 8px;
+    /*Typography stuff*/
+    text-align: center;
+}
+
 footer {
     /*Typography stuff*/
     font-style: italic;
