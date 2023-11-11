@@ -1,1 +1,1 @@
-alert('Olá!')
+console.log('Olá, Mundo!')
