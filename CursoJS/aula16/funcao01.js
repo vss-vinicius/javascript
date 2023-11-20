@@ -1,11 +1,17 @@
+// Definindo uma função chamada 'parimp' que recebe um parâmetro 'n'
 function parimp(n) {
+    // Verificando se o resto da divisão de 'n' por 2 é igual a 0 (indicando que 'n' é par)
     if (n % 2 == 0) {
-        return 'par'
+        // Se a condição for verdadeira, retornando a string 'par'
+        return 'par';
     } else {
-        return 'ímpar'
+        // Se a condição for falsa, retornando a string 'ímpar'
+        return 'ímpar';
     }
 }
 
-let res = parimp(12)
+// Chamando a função 'parimp' com o argumento 12 e armazenando o resultado na variável 'res'
+let res = parimp(12);
 
-console.log(res)
+// Exibindo o resultado (conteúdo da variável 'res') no console
+console.log(res);
