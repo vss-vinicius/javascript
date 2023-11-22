@@ -7,7 +7,7 @@ let amigo = {
     // Adicionando um método chamado 'engordar' ao objeto 'amigo'
     engordar(p = 0) {
         // Exibindo uma mensagem no console quando o método é chamado
-        console.log('Engordou')
+        console.log('Engordou!')
 
         // Atualizando o peso do amigo com o valor passado como parâmetro (padrão é 0 se não for fornecido)
         this.peso += p
